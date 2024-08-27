@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* by https://webtan.tech/ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2f2f4b;
+    font-family: "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", serif;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+p+p {
+    margin-top: 15px;
+}
+
+.header {
+    background-color: #d5d5e3;
+    padding: 80px 0;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    margin-bottom: 50px;
+}
+
+.logo {
+    text-align: center;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.inner {
+    width: 1000px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    font-size: 90px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #d5d5e3;
+}
+.title-w {
+    font-size: 90px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.skill {
+    background-color: #919eaf;
+    color: #fff;
+
+    
+}
+
+.skill__wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.skill__box {
+    background-color: #687688;
+    padding: 30px;
+    border-radius: 15px;
+}
+.skill__box-title{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.gallery_box_wrap{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.gallery_box{
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #eee;
+}
+.contact{
+    background-color: #d5d5e3;
+}
+
+.copyright {
+    background-color: #535371;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.footer_logo {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer_logo img {
+    width: 300px;
+}
+
+@media screen and (max-width:768px) {
+    .header {
+        display: block;
+    }
+
+    .header_info,
+    .header_img {
+        width: 100%;
+    }
+
+    .header_info_inner {
+        padding: 30px;
+    }
+
+    .skills_wrap,
+    .gallery_box_wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills_box {
+        margin-inline: auto;
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+    .works_gallery {
+        display: block;
+    }
+
+    .gallery_box {
+        width: 100%;
+    }
+}
