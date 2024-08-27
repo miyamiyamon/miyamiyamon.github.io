@@ -1,1 +1,0 @@
-# miyamiyamon.github.io
